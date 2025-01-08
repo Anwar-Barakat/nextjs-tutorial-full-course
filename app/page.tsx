@@ -1,6 +1,9 @@
+"use client"
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Card from "@/components/cards/Card";
+import { useEffect, useState } from "react";
 
 // Define TypeScript interface for product
 interface Product {
@@ -28,8 +31,16 @@ async function getProducts() {
   }
 }
 
-export default async function Home() {
-  const products = await getProducts();
+export default function Home() {
+  const [products, setProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const data = await getProducts();
+      setProducts(data);
+    };
+    fetchProducts();
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
