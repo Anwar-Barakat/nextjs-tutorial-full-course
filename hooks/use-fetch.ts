@@ -1,34 +1,28 @@
 import { useState } from "react";
 
-interface FetchState<T> {
-  data: T | null;
-  loading: boolean;
-  error: Error | null;
-}
-
 const useFetch = <T>(url: string) => {
-  const [state, setState] = useState<FetchState<T>>({
-    data: null,
-    loading: false,
-    error: null
-  });
+  const [data, setData] = useState<T | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<Error | null>(null);
 
   const fetchData = async () => {
-    setState(prev => ({ ...prev, loading: true }));
+    setLoading(true);
     try {
       const response = await fetch(url);
       const data = await response.json();
-      setState({ data, loading: false, error: null });
-    } catch (err) {
-      setState({ 
-        data: null,
-        loading: false,
-        error: err instanceof Error ? err : new Error('An error occurred')
-      });
+      setData(data);
+    } catch (error) {
+      if (error instanceof Error) {
+        setError(error);
+      } else {
+        setError(new Error('An unknown error occurred'));
+      }
+    } finally {
+      setLoading(false);
     }
   };
 
-  return { ...state, fetchData };
+  return { data, loading, error, fetchData };
 };
 
 export default useFetch;
