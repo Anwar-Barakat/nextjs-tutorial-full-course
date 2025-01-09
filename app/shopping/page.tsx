@@ -3,7 +3,8 @@ import RefComponent from '@/components/custom/RefComponent'
 import CustomHookComponent from '@/components/custom/CustomHookComponent'
 import UseFetchHookComponent from '@/components/custom/UseFetchHookComponent'
 import React from 'react'
-import CalculatorComponent from '@/components/custom/CalculatorComponent'
+import ToggleThemeComponent from '@/components/custom/ToggleThemeComponent'
+// import CalculatorComponent from '@/components/custom/CalculatorComponent'
 
 
 const Shopping = () => {
@@ -13,7 +14,8 @@ const Shopping = () => {
             {/* <RefComponent /> */}
             {/* <CustomHookComponent /> */}
             {/* <UseFetchHookComponent /> */}
-            <CalculatorComponent />
+            {/* <CalculatorComponent /> */}
+            <ToggleThemeComponent />
         </div>
     )
 }
