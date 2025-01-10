@@ -1,5 +1,6 @@
 import CalculatorComponent from '@/components/custom/CalculatorComponent'
 import CustomHookComponent from '@/components/custom/CustomHookComponent'
+import GSAPComponent from '@/components/custom/GSAPComponent'
 import ProductApiComponent from '@/components/custom/ProductApiComponent'
 import ReducerComponent from '@/components/custom/ReducerComponent'
 import RefComponent from '@/components/custom/RefComponent'
@@ -21,6 +22,7 @@ const Home = () => {
       {/* <ProductApiComponent /> */}
       {/* <TestimonialComponent /> */}
       <TypeScriptComponent />
+      {/* <GSAPComponent /> */}
     </div>
   )
 }
