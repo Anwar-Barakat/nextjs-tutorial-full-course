@@ -11,7 +11,7 @@ const admin: Admin = {
     role: 'admin'
 }
 
-const TypeScriptComponent = () => {
+const TypescriptComponent = () => {
     const [user, setUser] = useState<User>({
         name: 'John Doe',
         age: 20,
@@ -81,4 +81,4 @@ const TypeScriptComponent = () => {
     )
 }
 
-export default TypeScriptComponent
+export default TypescriptComponent

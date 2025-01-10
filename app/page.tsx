@@ -6,7 +6,8 @@ import ReducerComponent from '@/components/custom/ReducerComponent'
 import RefComponent from '@/components/custom/RefComponent'
 import TestimonialComponent from '@/components/custom/TestimonialComponent'
 import ToggleThemeComponent from '@/components/custom/ToggleThemeComponent'
-import TypeScriptComponent from '@/components/custom/TypeScriptComponent'
+import TypescriptComponent from '@/components/custom/TypeScriptComponent'
+import TypescriptExample from '@/components/custom/TypescriptExample'
 import UseFetchHookComponent from '@/components/custom/UseFetchHookComponent'
 import React from 'react'
 
@@ -21,8 +22,9 @@ const Home = () => {
       {/* <ToggleThemeComponent /> */}
       {/* <ProductApiComponent /> */}
       {/* <TestimonialComponent /> */}
-      <TypeScriptComponent />
+      {/* <TypescriptComponent /> */}
       {/* <GSAPComponent /> */}
+      <TypescriptExample />
     </div>
   )
 }
