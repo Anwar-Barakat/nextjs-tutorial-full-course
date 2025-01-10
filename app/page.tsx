@@ -9,6 +9,7 @@ import ToggleThemeComponent from '@/components/custom/ToggleThemeComponent'
 import TypescriptComponent from '@/components/custom/TypeScriptComponent'
 import TypescriptExample from '@/components/custom/TypescriptExample'
 import UseFetchHookComponent from '@/components/custom/UseFetchHookComponent'
+import ZodFormComponent from '@/components/custom/ZodFormComponent'
 import React from 'react'
 
 const Home = () => {
@@ -24,7 +25,8 @@ const Home = () => {
       {/* <TestimonialComponent /> */}
       {/* <TypescriptComponent /> */}
       {/* <GSAPComponent /> */}
-      <TypescriptExample />
+      {/* <TypescriptExample /> */}
+      <ZodFormComponent />
     </div>
   )
 }
