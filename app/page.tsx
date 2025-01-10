@@ -5,6 +5,7 @@ import ReducerComponent from '@/components/custom/ReducerComponent'
 import RefComponent from '@/components/custom/RefComponent'
 import TestimonialComponent from '@/components/custom/TestimonialComponent'
 import ToggleThemeComponent from '@/components/custom/ToggleThemeComponent'
+import TypeScriptComponent from '@/components/custom/TypeScriptComponent'
 import UseFetchHookComponent from '@/components/custom/UseFetchHookComponent'
 import React from 'react'
 
@@ -18,7 +19,8 @@ const Home = () => {
       {/* <CalculatorComponent /> */}
       {/* <ToggleThemeComponent /> */}
       {/* <ProductApiComponent /> */}
-      <TestimonialComponent />
+      {/* <TestimonialComponent /> */}
+      <TypeScriptComponent />
     </div>
   )
 }
