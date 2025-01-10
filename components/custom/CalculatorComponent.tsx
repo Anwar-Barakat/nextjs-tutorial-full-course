@@ -137,7 +137,7 @@ const CalculatorComponent = () => {
                 break
             default:
                 return
-        }
+        }   
         updateHistoryAndResult(operation, result)
     }, [state.number1, state.number2, updateHistoryAndResult])
 

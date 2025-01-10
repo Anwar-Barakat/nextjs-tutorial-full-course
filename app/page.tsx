@@ -1,67 +1,34 @@
-"use client"
+import CalculatorComponent from '@/components/custom/CalculatorComponent'
+import CustomHookComponent from '@/components/custom/CustomHookComponent'
+import GSAPComponent from '@/components/custom/GSAPComponent'
+import ProductApiComponent from '@/components/custom/ProductApiComponent'
+import ReducerComponent from '@/components/custom/ReducerComponent'
+import RefComponent from '@/components/custom/RefComponent'
+import TestimonialComponent from '@/components/custom/TestimonialComponent'
+import ToggleThemeComponent from '@/components/custom/ToggleThemeComponent'
+import TypescriptComponent from '@/components/custom/TypeScriptComponent'
+import TypescriptExample from '@/components/custom/TypescriptExample'
+import UseFetchHookComponent from '@/components/custom/UseFetchHookComponent'
+import ZodFormComponent from '@/components/custom/ZodFormComponent'
+import React from 'react'
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Card from "@/components/cards/Card";
-import { useEffect, useState } from "react";
-
-// Define TypeScript interface for product
-interface Product {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  image: string;
-  rating: {
-    rate: number;
-    count: number;
-  };
-  category: string;
-}
-
-async function getProducts() {
-  try {
-    const res = await fetch('https://fakestoreapi.com/products');
-    if (!res.ok) throw new Error('Failed to fetch products');
-    const data: Product[] = await res.json();
-    return data;
-  } catch (error) {
-    console.error(error);
-    return [];
-  }
-}
-
-export default function Home() {
-  const [products, setProducts] = useState<Product[]>([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const data = await getProducts();
-      setProducts(data);
-    };
-    fetchProducts();
-  }, []);
-
+const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="container mx-auto py-8 px-4 flex-grow">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-            Our Products
-          </h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Discover our curated collection of high-quality products at competitive prices.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products.map((product: Product) => (
-            <Card key={product.id} product={product} />
-          ))}
-        </div>
-      </main>
-      <Footer />
+    <div>
+      {/* <ReducerComponent /> */}
+      {/* <RefComponent /> */}
+      {/* <CustomHookComponent /> */}
+      {/* <UseFetchHookComponent /> */}
+      {/* <CalculatorComponent /> */}
+      {/* <ToggleThemeComponent /> */}
+      {/* <ProductApiComponent /> */}
+      {/* <TestimonialComponent /> */}
+      {/* <TypescriptComponent /> */}
+      {/* <GSAPComponent /> */}
+      {/* <TypescriptExample /> */}
+      <ZodFormComponent />
     </div>
-  );
+  )
 }
+
+export default Home
