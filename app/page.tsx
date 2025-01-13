@@ -10,6 +10,7 @@ import ToggleThemeComponent from '@/components/custom/ToggleThemeComponent'
 import TypescriptComponent from '@/components/custom/TypeScriptComponent'
 import TypescriptExample from '@/components/custom/TypescriptExample'
 import UseFetchHookComponent from '@/components/custom/UseFetchHookComponent'
+import UseFormComponent from '@/components/custom/UseFormComponent'
 import ZodFormComponent from '@/components/custom/ZodFormComponent'
 import React from 'react'
 
@@ -28,7 +29,8 @@ const Home = () => {
       {/* <GSAPComponent /> */}
       {/* <TypescriptExample /> */}
       {/* <ZodFormComponent /> */}
-      <RadixUIComponent />
+      {/* <RadixUIComponent /> */}
+      <UseFormComponent />
     </div>
   )
 }
