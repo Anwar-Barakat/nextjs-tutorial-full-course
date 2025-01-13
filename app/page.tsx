@@ -2,6 +2,7 @@ import CalculatorComponent from '@/components/custom/CalculatorComponent'
 import CustomHookComponent from '@/components/custom/CustomHookComponent'
 import GSAPComponent from '@/components/custom/GSAPComponent'
 import ProductApiComponent from '@/components/custom/ProductApiComponent'
+import RadixUIComponent from '@/components/custom/RadixUIComponent'
 import ReducerComponent from '@/components/custom/ReducerComponent'
 import RefComponent from '@/components/custom/RefComponent'
 import TestimonialComponent from '@/components/custom/TestimonialComponent'
@@ -9,6 +10,7 @@ import ToggleThemeComponent from '@/components/custom/ToggleThemeComponent'
 import TypescriptComponent from '@/components/custom/TypeScriptComponent'
 import TypescriptExample from '@/components/custom/TypescriptExample'
 import UseFetchHookComponent from '@/components/custom/UseFetchHookComponent'
+import UseFormComponent from '@/components/custom/UseFormComponent'
 import ZodFormComponent from '@/components/custom/ZodFormComponent'
 import React from 'react'
 
@@ -26,7 +28,9 @@ const Home = () => {
       {/* <TypescriptComponent /> */}
       {/* <GSAPComponent /> */}
       {/* <TypescriptExample /> */}
-      <ZodFormComponent />
+      {/* <ZodFormComponent /> */}
+      {/* <RadixUIComponent /> */}
+      <UseFormComponent />
     </div>
   )
 }
