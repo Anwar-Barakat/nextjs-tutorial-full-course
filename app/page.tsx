@@ -1,7 +1,7 @@
 import CalculatorComponent from '@/components/custom/CalculatorComponent'
 import CustomHookComponent from '@/components/custom/CustomHookComponent'
 import GSAPComponent from '@/components/custom/GSAPComponent'
-import UseHookReactFeatureComponent from '@/components/custom/UseHookReactFeatureComponent'
+import UseHookReactFeatureComponent from '@/components/custom/react19/UseHookReactFeatureComponent'
 import ProductApiComponent from '@/components/custom/ProductApiComponent'
 import RadixUIComponent from '@/components/custom/RadixUIComponent'
 import ReducerComponent from '@/components/custom/ReducerComponent'
@@ -11,9 +11,10 @@ import ToggleThemeComponent from '@/components/custom/ToggleThemeComponent'
 import TypescriptComponent from '@/components/custom/TypeScriptComponent'
 import TypescriptExample from '@/components/custom/TypescriptExample'
 import UseFetchHookComponent from '@/components/custom/UseFetchHookComponent'
-import UseFormComponent from '@/components/custom/UseFormComponent'
-import ZodFormComponent from '@/components/custom/ZodFormComponent'
+import UseFormComponent from '@/components/custom/form/UseFormComponent'
+import ZodFormComponent from '@/components/custom/form/ZodFormComponent'
 import React from 'react'
+import ActionReactFeatureComponent from '@/components/custom/react19/ActionReactFeatureComponent'
 
 const Home = () => {
   return (
@@ -32,7 +33,8 @@ const Home = () => {
       {/* <ZodFormComponent /> */}
       {/* <RadixUIComponent /> */}
       {/* <UseFormComponent /> */}
-      <UseHookReactFeatureComponent />
+      {/* <UseHookReactFeatureComponent /> */}
+      <ActionReactFeatureComponent />
     </div>
   )
 }
