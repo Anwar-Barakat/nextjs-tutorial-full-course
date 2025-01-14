@@ -1,6 +1,7 @@
 import CalculatorComponent from '@/components/custom/CalculatorComponent'
 import CustomHookComponent from '@/components/custom/CustomHookComponent'
 import GSAPComponent from '@/components/custom/GSAPComponent'
+import UseHookReactFeatureComponent from '@/components/custom/UseHookReactFeatureComponent'
 import ProductApiComponent from '@/components/custom/ProductApiComponent'
 import RadixUIComponent from '@/components/custom/RadixUIComponent'
 import ReducerComponent from '@/components/custom/ReducerComponent'
@@ -30,7 +31,8 @@ const Home = () => {
       {/* <TypescriptExample /> */}
       {/* <ZodFormComponent /> */}
       {/* <RadixUIComponent /> */}
-      <UseFormComponent />
+      {/* <UseFormComponent /> */}
+      <UseHookReactFeatureComponent />
     </div>
   )
 }

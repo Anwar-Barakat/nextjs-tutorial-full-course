@@ -39,10 +39,10 @@ const UseFormComponent = () => {
                             <Label htmlFor="firstName">First Name</Label>
                             <Input
                                 id="firstName"
-                                {...register('firstName', { 
+                                {...register('firstName', {
                                     required: 'First Name is required',
                                     minLength: { value: 2, message: 'First name must be at least 2 characters' }
-                                })} 
+                                })}
                                 placeholder='Enter your first name'
                                 className={errors.firstName ? "border-destructive" : ""}
                             />
@@ -53,10 +53,10 @@ const UseFormComponent = () => {
                             <Label htmlFor="lastName">Last Name</Label>
                             <Input
                                 id="lastName"
-                                {...register('lastName', { 
+                                {...register('lastName', {
                                     required: 'Last Name is required',
                                     minLength: { value: 2, message: 'Last name must be at least 2 characters' }
-                                })} 
+                                })}
                                 placeholder='Enter your last name'
                                 className={errors.lastName ? "border-destructive" : ""}
                             />
@@ -68,13 +68,13 @@ const UseFormComponent = () => {
                             <Input
                                 id="email"
                                 type="email"
-                                {...register('email', { 
-                                    required: 'Email is required', 
-                                    pattern: { 
-                                        value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 
-                                        message: 'Invalid email address' 
-                                    } 
-                                })} 
+                                {...register('email', {
+                                    required: 'Email is required',
+                                    pattern: {
+                                        value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                        message: 'Invalid email address'
+                                    }
+                                })}
                                 placeholder='Enter your email'
                                 className={errors.email ? "border-destructive" : ""}
                             />
@@ -85,7 +85,7 @@ const UseFormComponent = () => {
                             <Label htmlFor="city">City</Label>
                             <Input
                                 id="city"
-                                {...register('city', { required: 'City is required' })} 
+                                {...register('city', { required: 'City is required' })}
                                 placeholder='Enter your city'
                                 className={errors.city ? "border-destructive" : ""}
                             />
@@ -96,7 +96,7 @@ const UseFormComponent = () => {
                             <Label htmlFor="state">State</Label>
                             <Input
                                 id="state"
-                                {...register('state', { required: 'State is required' })} 
+                                {...register('state', { required: 'State is required' })}
                                 placeholder='Enter your state'
                                 className={errors.state ? "border-destructive" : ""}
                             />
@@ -107,7 +107,7 @@ const UseFormComponent = () => {
                             <Label htmlFor="country">Country</Label>
                             <Input
                                 id="country"
-                                {...register('country', { required: 'Country is required' })} 
+                                {...register('country', { required: 'Country is required' })}
                                 placeholder='Enter your country'
                                 className={errors.country ? "border-destructive" : ""}
                             />
@@ -118,15 +118,15 @@ const UseFormComponent = () => {
                             <Label htmlFor="completeLocation">Complete Address</Label>
                             <Input
                                 id="completeLocation"
-                                {...register('completeLocation', { required: 'Complete Location is required' })} 
+                                {...register('completeLocation', { required: 'Complete Location is required' })}
                                 placeholder='Enter your complete address'
                                 className={errors.completeLocation ? "border-destructive" : ""}
                             />
                             {errors.completeLocation && <p className="text-sm text-destructive">{errors.completeLocation.message}</p>}
                         </div>
 
-                        <Button 
-                            type="submit" 
+                        <Button
+                            type="submit"
                             className="w-full"
                             disabled={isSubmitting}
                         >
