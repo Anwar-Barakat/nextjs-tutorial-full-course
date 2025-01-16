@@ -33,7 +33,6 @@ export default function RootLayout({
       >
         <Theme>
           <ThemePanel />
-
           {children}
           <Toaster />
         </Theme>
