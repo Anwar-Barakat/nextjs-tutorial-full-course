@@ -16,6 +16,7 @@ import ZodFormComponent from '@/components/custom/form/ZodFormComponent'
 import React from 'react'
 import ActionReactFeatureComponent from '@/components/custom/react19/ActionReactFeatureComponent'
 import TabComponent from '@/components/custom/examples/TabComponent'
+import { BasicMotionComponent, FlipCardComponent, PulsingButtons } from '@/components/framer-motion'
 
 const Home = () => {
   return (
@@ -35,7 +36,10 @@ const Home = () => {
       {/* <RadixUIComponent /> */}
       {/* <UseFormComponent /> */}
       {/* <UseHookReactFeatureComponent /> */}
-      <TabComponent />
+      {/* <TabComponent /> */}
+      {/* <BasicMotionComponent /> */}
+      {/* <PulsingButtons /> */}
+      <FlipCardComponent />
     </div>
   )
 }
