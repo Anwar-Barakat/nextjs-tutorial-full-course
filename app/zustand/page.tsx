@@ -1,6 +1,6 @@
 "use client"
 
-import { ButtonCounterComponent, ReceiptComponent } from './_components';
+import { ButtonCounterComponent, PasswordGeneratorComponent, ReceiptComponent } from './_components';
 import React from 'react'
 
 const ZustandPage = () => {
@@ -8,7 +8,8 @@ const ZustandPage = () => {
         <div>
 
             {/* <ButtonCounterComponent /> */}
-            <ReceiptComponent />
+            {/* <ReceiptComponent />     */}
+            <PasswordGeneratorComponent />
         </div>
     )
 }
