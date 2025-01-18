@@ -1,4 +1,4 @@
-import { useCounterStore } from '@/stores/counterStore';
+import { useCounterStore } from '@/draftStores/draft/counterStore';
 import React from 'react'
 
 const ButtonCounterComponent = () => {

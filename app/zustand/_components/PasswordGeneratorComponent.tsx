@@ -1,6 +1,6 @@
 "use client";
 
-import usePasswordStore from "@/stores/passwordStore";
+import usePasswordStore from "@/draftStores/draft/passwordStore";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import {
