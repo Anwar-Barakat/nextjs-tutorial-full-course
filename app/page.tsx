@@ -39,7 +39,7 @@ const Home = () => {
       {/* <TabComponent /> */}
       {/* <BasicMotionComponent /> */}
       {/* <PulsingButtons /> */}
-      <FlipCardComponent />
+      {/* <FlipCardComponent /> */}
     </div>
   )
 }
